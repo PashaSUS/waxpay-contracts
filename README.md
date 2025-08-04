@@ -134,12 +134,3 @@ cleos set contract <account> <contract_dir> -p <account>@active
 MIT License. Open source and free to use for WAX community and builders.
 
 ---
-
-## Contributors
-
-- [SUS Digital Productions](https://github.com/SUS-Digital-Productions) – Original developers and maintainers
-
----
-
----
-
