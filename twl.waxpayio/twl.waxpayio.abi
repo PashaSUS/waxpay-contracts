@@ -1,0 +1,161 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addslippage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "slippage",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "addtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "contract",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "image_link",
+                    "type": "string"
+                },
+                {
+                    "name": "system_fee",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "changeimage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "image_link",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "changesysfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "system_fee",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "cls",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "rmtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "tokens",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "contract",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "image_link",
+                    "type": "string"
+                },
+                {
+                    "name": "system_fee",
+                    "type": "float64"
+                },
+                {
+                    "name": "slippage",
+                    "type": "float64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addslippage",
+            "type": "addslippage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addtoken",
+            "type": "addtoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "changeimage",
+            "type": "changeimage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "changesysfee",
+            "type": "changesysfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cls",
+            "type": "cls",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmtoken",
+            "type": "rmtoken",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "tokens",
+            "type": "tokens",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

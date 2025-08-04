@@ -1,0 +1,307 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addrecipient",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "recipient",
+                    "type": "name"
+                },
+                {
+                    "name": "weight",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "addstore",
+            "base": "",
+            "fields": [
+                {
+                    "name": "store_id",
+                    "type": "string"
+                },
+                {
+                    "name": "store_name",
+                    "type": "string"
+                },
+                {
+                    "name": "authenticated_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_slippage",
+                    "type": "float64"
+                },
+                {
+                    "name": "max_slippage",
+                    "type": "float64"
+                },
+                {
+                    "name": "usd_value",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "changestate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "active",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "cls",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "edittoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_slippage",
+                    "type": "float64"
+                },
+                {
+                    "name": "max_slippage",
+                    "type": "float64"
+                },
+                {
+                    "name": "usd_value",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "recipients",
+            "base": "",
+            "fields": [
+                {
+                    "name": "recipient",
+                    "type": "name"
+                },
+                {
+                    "name": "weight",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "rmvrec",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "recipient",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "rmvrecs",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "rmvsystoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rmvtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "stores",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "store_id",
+                    "type": "string"
+                },
+                {
+                    "name": "store_name",
+                    "type": "string"
+                },
+                {
+                    "name": "authenticated_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "tokens",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_slippage",
+                    "type": "float64"
+                },
+                {
+                    "name": "max_slippage",
+                    "type": "float64"
+                },
+                {
+                    "name": "active",
+                    "type": "bool"
+                },
+                {
+                    "name": "usd_value",
+                    "type": "float64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addrecipient",
+            "type": "addrecipient",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addstore",
+            "type": "addstore",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addtoken",
+            "type": "addtoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "changestate",
+            "type": "changestate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cls",
+            "type": "cls",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "edittoken",
+            "type": "edittoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmvrec",
+            "type": "rmvrec",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmvrecs",
+            "type": "rmvrecs",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmvsystoken",
+            "type": "rmvsystoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmvtoken",
+            "type": "rmvtoken",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "recipients",
+            "type": "recipients",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stores",
+            "type": "stores",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "tokens",
+            "type": "tokens",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

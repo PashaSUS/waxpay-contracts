@@ -1,0 +1,159 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "acceptorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "system_id",
+                    "type": "string"
+                },
+                {
+                    "name": "store_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "auth",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "auth_code",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "balances",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "token_contract",
+                    "type": "name"
+                },
+                {
+                    "name": "asset",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "claim",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cls",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "orders",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "system_id",
+                    "type": "string"
+                },
+                {
+                    "name": "sender",
+                    "type": "name"
+                },
+                {
+                    "name": "token_contract",
+                    "type": "name"
+                },
+                {
+                    "name": "asset",
+                    "type": "asset"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "rejectorder",
+            "base": "",
+            "fields": [
+                {
+                    "name": "system_id",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "acceptorder",
+            "type": "acceptorder",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "auth",
+            "type": "auth",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claim",
+            "type": "claim",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cls",
+            "type": "cls",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rejectorder",
+            "type": "rejectorder",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "balances",
+            "type": "balances",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "orders",
+            "type": "orders",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
